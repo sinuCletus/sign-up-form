@@ -17,8 +17,8 @@
 }
 
 
-body {
-    height: 100vh;
+body, html {
+    height: 100%;
    
 }
 
@@ -34,19 +34,19 @@ input:focus {
 
 /* Layout Mobile*/
 .content {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
 }
 
 .content {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .banner {
     width: 100vw;
     height: 20vh;
-    background-image: url('/images/allec-gomes-print.jpg');
+    background-image: url('./images/allec-gomes-print.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -142,7 +142,8 @@ the button to align with the labels /inputs */
 
 @media only screen and (min-width: 600px) {
     .content {
-        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: stretch;
     }
 
     .banner {
