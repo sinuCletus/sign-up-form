@@ -46,7 +46,7 @@ input:focus {
 .banner {
     width: 100vw;
     height: 20vh;
-    background-image: url('./images/allec-gomes-print.jpg');
+    background-image: url('images/allec-gomes-print.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
