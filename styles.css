@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --form-margin: 1.5rem;
+    --form-padding: .5rem;
+    --primary-font-clr: #001122;
+    --primary-bg: rgb(245, 242, 242);
+    --theme-clr: #be4206;
+    --form-clr: #fff;
+    --input-border: 1px solid rgb(6, 6, 61);
+    --invalid: pink; 
+    --valid: rgb(179, 225, 179); 
+}
+
+
+body {
+    height: 100vh;
+   
+}
+
+/* validation & focus*/
+
+input:valid {
+    border-color: lightgreen;
+}
+
+input:focus {
+    border-color: rgb(77, 77, 229);
+}
+
+/* Layout Mobile*/
+.content {
+    height: 100vh;
+    width: 100vw;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner {
+    width: 100vw;
+    height: 20vh;
+    background-image: url('/images/allec-gomes-print.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.logo {
+    color: white;
+    margin: auto;
+}
+
+ion-icon {
+    font-size: 64px;
+    background-color: rgb(0, 0, 0, .55);
+    width: 100%;
+}
+
+.banner p {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+a:link {
+    color: rgb(121, 183, 29);
+}
+
+a:visited {
+    color: rgb(91, 195, 195);
+}
+
+.right {
+    height: 80vh;
+    width: 100vw;
+    background-color: var(--primary-bg);
+}
+
+.form-header {
+    text-align: center;
+    margin: var(--form-margin);
+}
+
+legend {
+    text-align: start;
+    margin: auto;
+    width: min(300px, 75%);
+    padding-top: var(--form-padding);
+    padding-bottom: var(--form-padding);
+}
+
+.sign-up-form {
+    margin: var(--form-margin) 0;
+    box-shadow: 0 .2rem 20px rgb(68, 67, 67);
+    background-color: var(--form-clr);
+}
+
+.sign-up-form fieldset {
+    border: none;
+    background-color: var(--form-clr);
+}
+
+
+
+/*This is where I left off, trying to get
+the button to align with the labels /inputs */
+.submit {
+    width: 40%;
+    height: 5vh;
+    font-weight: bold;
+    background-color: var(--theme-clr);
+    border: none;
+    border-radius: 12px;
+    margin-bottom: .5rem;
+}
+
+.submit:hover, .submit:focus {
+    background-color: #5e1c05;
+    color: var(--form-clr);
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: min(300px, 75%);
+    padding-top: var(--form-padding);
+    padding-bottom: var(--form-padding);
+}
+
+/* desktop  */
+
+@media only screen and (min-width: 600px) {
+    .content {
+        flex-wrap: nowrap;
+    }
+
+    .banner {
+        height: 100vh;
+        width: 40vw;
+    }
+
+    .right {
+        height: 100%;
+        width: 60vw;
+    }
+
+    .name, .contact, .password {
+        flex-direction: row;
+    }
+
+
+    .submit {
+        height: 70px;
+        font-size: larger;
+        width: 200px;
+    }
+
+    .form-info label {
+        width: 150px;
+        margin-right: .5rem;
+    }
+
+    legend {
+        text-align: start;
+        margin: auto;
+        width: min(300px, 75%);
+        padding-top: var(--form-padding);
+        padding-bottom: var(--form-padding);
+    }
+}

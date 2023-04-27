@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="content">
+        <div class="banner">
+            <ion-icon name="leaf-outline" class="logo"></ion-icon>
+            <p>Photo by <u>Allec Gomez</u> via <a href="https://unsplash.com/photos/_JJcOx7OoYk" target="_blank"><u>Unsplash</u></a></p>
+        </div>
+        <div class="right">
+            <header class="form-header">
+                <h2>This is not a real online service!</h2>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Sign up <em>now</em> to get started!</h3>
+            </header>
+            <form action="#" method="post" class="sign-up-form">
+                <legend>Let's Do This!</legend>
+                <fieldset class="name">
+                    <div class="form-info">
+                        <label for="firstName">First Name</label>
+                        <input type='text' id="firstName" name="firstName" placeholder="John..." required>
+                    </div>
+                    <div class="form-info">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Doe..." required>
+                    </div>
+                </fieldset>
+                <fieldset class="contact">
+                    <div class="form-info">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    </div>
+                    <div class="form-info">
+                        <label for="tel">Phone Number</label>
+                        <input type="tel" id="tel" name="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="111-111-1111" required>
+                    </div>
+                </fieldset>
+                <fieldset class="password">
+                    <div class="form-info">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-info">
+                        <label for="password-confirm">Confirm Password</label>
+                        <input type="password" id="password-confirm" name="password-confirm" required>
+                    </div>
+                </fieldset>
+                <fieldset class="account">
+                    <div class="form-info">
+                        <button type="submit" class="submit">Create Account</button>
+                        <p>Already have an account? <a href="#">Log In</a></p>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
